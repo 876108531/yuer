@@ -8,34 +8,23 @@
 <meta name="keywords" content="">
 <link href="" rel="stylesheet">
 <style type="text/css">
-  ul,li{margin: 0;padding: 0;list-style: none;}
-  ul{width: 300px;height: 300px;position: relative;overflow: hidden;}
-  li{width: 300px;height: 300px;position: absolute;}
-  #img1{background-color: red;left: 0;}
-  #img2{background-color: green;left: 300px;}
+  ul,li {margin: 0;padding: 0;list-style: none;}
+  li {position: absolute;}
+  #img1 {width: 100px;height: 100px;background: red;transition:width 3s linear 3s;}
+  #img2 {width: 100px;height: 100px;background: green;}
 </style>
 </head>
 <body>
-    <div>
+    <div id="wrap">
       <ul id="slide">
-        <li id="img1"></li>
         <li id="img2"></li>
+        <li id="img1"></li>
         <!-- <li id="img3"></li> -->
         <!-- <li id="img4"></li> -->
       </ul>
     </div>
-    <script type="text/javascript">
-      // function slide(wrap) {
-      //   debugger
-      //   document.getElementById('slide').children[0].style.left = '0';
-      //   document.getElementById('slide').children[1].style.left = '300px';
-      //   document.getElementById('slide').children.push(document.getElementById('slide').children.shift());
-      // }
-      // setInterval(slide,2000);
-      function anima(element, style, callback) {
-        
-      }
-      debugger
+    <script>
+      document.getElementById('slide').children[document.getElementById('slide').children.length-1].style.width = '0px';
     </script>
 </body>
 </html>
