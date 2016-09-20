@@ -39,5 +39,5 @@ gulp.task('tserver', function() {
     }
   });
 
-  gulp.watch(['*.html', '*.js'], {cwd: 'test'}, reload);
+  gulp.watch(['*.html', 'css/**/*.css', 'js/**/*.js'], {cwd: 'test'}, reload);
 })
