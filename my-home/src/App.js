@@ -9,14 +9,13 @@ class App extends Component {
       
     };
 
+    this.getWindowHeight = this.getWindowHeight();
   }
   getWindowHeight() {
-    return this.innerHeight;
+    return window.innerHeight;
   }
   render() {
-    var _this = this;
-    var windowHeight = _this.getWindowHeight.call(window);
-    console.log(windowHeight);
+    console.log(this.getWindowHeight);
     return (
       <div className="App">
         <header className="App-header transparent">
@@ -26,8 +25,8 @@ class App extends Component {
         <p className="App-intro transparent">
           {/*To get started, edit <code>src/App.js</code> and save to reload.*/}
         </p>
-        <div className="App-body" style={{height:windowHeight}}>
-          <a href="javascript:">2048</a>
+        <div className="App-body" style={{height:window.innerHeight}}>
+          <button className="a">2048</button>
         </div>
       </div>
     );

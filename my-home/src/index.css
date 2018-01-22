@@ -4,5 +4,11 @@ body {
   font-family: sans-serif;
 }
 a {
-  text-decoration: none;  
+  text-decoration: none;/*去掉a链接的下划线*/
+}
+button {
+  outline: none;/*去掉button点击后的轮廓*/
+}
+.transparent {
+  opacity: 0.5;
 }
