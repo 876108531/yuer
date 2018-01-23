@@ -2,52 +2,13 @@
   text-align: center;
   background:#eee url('./img/01.jpg') fixed center;/*背景色、背景图、固定、居中、重复*/
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.conent {
+  clear: left;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.transparent {
+  opacity: 0.5;
 }
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-/***End***/
-
-/***App-body***/
-.App-body {
-  width: 100%;
-}
-.App-body>.a {
-  /* display: inline-block; */
-  width: 150px;
-  height: 150px;
-  font-size: 3em;
-  line-height: 150px;
-  border: solid #898989;
-  border-radius: 75px;
-  background-color: #aaa;
-}
-.App-body>.a:hover {
-  cursor: pointer;
-}
-.App-body>.a:active {
-  background-color: #ccc;
-  border-color: #ddd;
-  font-size: 2.9em;
+.left {
+  float: left;
 }

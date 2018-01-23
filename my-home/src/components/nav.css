@@ -1,0 +1,26 @@
+.App-nav {
+  width: 300px;
+  margin: auto;
+  overflow: hidden;
+}
+.App-nav .a {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  font-size: 2em;
+  line-height: 100px;
+  border: solid #898989;
+  border-radius: 75px;
+  background-color: #aaa;
+}
+.App-nav .a:hover {
+  cursor: pointer;
+}
+.App-nav .a:active {
+  background-color: #ccc;
+  border-color: #ddd;
+  font-size: 1.9em;
+}
+.a.left {
+  margin: 15px;
+}

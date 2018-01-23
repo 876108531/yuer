@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import {Route} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './page/welcome';
+import g_2048 from './page/g_2048';
+import Header from './components/header';
+import Nav from './components/nav';
+
 
 class App extends Component {
   constructor(props) {
@@ -15,18 +22,13 @@ class App extends Component {
     return window.innerHeight;
   }
   render() {
-    console.log(this.getWindowHeight);
     return (
       <div className="App">
-        <header className="App-header transparent">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to My-home</h1>
-        </header>
-        <p className="App-intro transparent">
-          {/*To get started, edit <code>src/App.js</code> and save to reload.*/}
-        </p>
-        <div className="App-body" style={{height:window.innerHeight}}>
-          <button className="a">2048</button>
+        <Header logo={logo} />
+        <Nav />
+        <div className="conent"  style={{height:window.innerHeight}}>
+          <Route path='/welcome' component={Welcome} />
+          <Route path='/g_2048' component={g_2048} />
         </div>
       </div>
     );
